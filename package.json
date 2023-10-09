@@ -1,0 +1,15 @@
+{
+  "name": "singlehtml",
+  "version": "1.0.0",
+  "description": "Minifies HTML,CSS,JS to one single index.html file",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js index.html true"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "html-minifier-terser": "^7.2.0",
+    "terser": "^5.21.0"
+  }
+}
