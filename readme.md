@@ -10,9 +10,9 @@ npm install https://github.com/MarkusTieche/singleHTML.git
 # how to use
 Minify & inject index.html in main folder to build/index.html
 ```
-singlehtml [optional output filename]
+npx singlehtml [optional output filename]
 
-singlehtml index.html
+npx singlehtml index.html
 ```
 
 Convert resources to create a single index.html without any dependencies.
