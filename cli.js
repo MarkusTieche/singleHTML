@@ -1,2 +1,4 @@
 #!/usr/bin/env node
-console.log("sdhjcb")
+
+const [,, ...args] = process.argv
+console.log('hello args ${args}')
