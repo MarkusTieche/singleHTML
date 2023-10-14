@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // https://github.com/terser/html-minifier-terser
 
 const fs = require('fs');
