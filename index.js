@@ -9,10 +9,15 @@ const minify = require('html-minifier-terser').minify;
 
 (function init(args)
 {
+
     var myArgs = process.argv.slice(2);
     var outputFile = myArgs[0];
     var obfuscate = myArgs[1]; //TODO: OBFUSCATE?
-
+    
+    if(outputFile == undefined)
+    {
+        outputFile = "index.html";
+    }
 
     if (!fs.existsSync("./build")){
         fs.mkdirSync("./build");

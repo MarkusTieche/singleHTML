@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node index.js index.html true"
   },
-  "bin":{"singlehtml":"index.js index.html true"},
+  "bin":{"singlehtml":"index.js"},
   "author": "",
   "license": "ISC",
   "dependencies": {
