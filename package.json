@@ -4,7 +4,7 @@
   "description": "Minifies HTML,CSS,JS to one single index.html file",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js index.html true"
+    "singlehtml": "node index.js index.html true"
   },
   "author": "",
   "license": "ISC",
