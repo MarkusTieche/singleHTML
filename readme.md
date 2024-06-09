@@ -19,7 +19,7 @@ Convert resources to create a single index.html without any dependencies.
 
 Audio:convert to base64 mp3 https://base64.guru/converter/encode/audio/mp3
 
-Font: convert to base64 font and embed in css https://www.base64encode.org/enc/font/
+Font: convert to base64 font and embed in css https://www.base64encode.org/enc/font/](https://transfonter.org)
 
 Images: convert to base64 image https://www.base64-image.de
 
