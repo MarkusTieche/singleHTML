@@ -40,15 +40,14 @@ const minify = require('html-minifier-terser').minify;
             return html;
         }
         
-        for (let i = 0; i < scriptTags.length; i++) 
-        {
-            console.log('- found: '+scriptTags[i]);
-            if( scriptTags[i].match('src="([^"]+)"'))
+        for await (const scriptTag of scriptTags) {
+            console.log('- found: '+scriptTag);
+            if( scriptTag.match('src="([^"]+)"'))
             {
-                var path = scriptTags[i].match('src="([^"]+)"')[1];
+                var path = scriptTag.match('src="([^"]+)"')[1];
                 await getFile('./'+path)
                 .then(data=>{terser.minify(data,{mangle:true,format: { max_line_len:1000}})
-                .then(result=>{html = html.replace(scriptTags[i],"<script>"+result.code+"</script>"),console.log('  - minifyJS & inject: '+path)})});
+                .then(result=>{html = html.replace(scriptTag,"<script>"+result.code+"</script>"),console.log('  minifyJS & inject: '+path)})});
             }
         }
 
